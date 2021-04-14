@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/icon_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:text="100"/>
+
+    <ImageView
+        android:id="@+id/icon_button"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_taxi_econom"
+        android:background="@android:color/transparent" />
+</RelativeLayout>

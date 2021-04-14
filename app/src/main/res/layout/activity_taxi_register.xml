@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_in_back_img"
+    android:orientation="vertical"
+    tools:context="texel.texel_pocketmaps.activities.RegisterActivities.TaxiRegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/timg_my"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewCustomerProfileInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="@string/registration"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:background="#1D009688"
+                android:digits=" abcdefghijklmnopqrstuvwxyzüığöşçəABCDEFGHIJKLMNOPQRSİTUVWXYZÜIĞÖŞÇƏ0123456789"
+                android:drawableStart="@drawable/ic_person_white_24dp"
+                android:drawableLeft="@drawable/ic_person_white_24dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/primary_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#ADCCE2" />
+
+            <EditText
+                android:id="@+id/editTextSurname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:background="#1D009688"
+                android:digits=" abcdefghijklmnopqrstuvwxyzüığöşçəABCDEFGHIJKLMNOPQRSİTUVWXYZÜIĞÖŞÇƏ0123456789"
+                android:drawableStart="@drawable/ic_person_white_24dp"
+                android:drawableLeft="@drawable/ic_person_white_24dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/surname"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/primary_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#ADCCE2" />
+
+            <EditText
+                android:id="@+id/editTextCarNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:background="#1D009688"
+                android:drawableStart="@drawable/ic_directions_car_white_24dp"
+                android:drawableLeft="@drawable/ic_directions_car_white_24dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/car_number"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/primary_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#ADCCE2" />
+
+            <EditText
+                android:id="@+id/editTextCarColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:background="#1D009688"
+                android:drawableStart="@drawable/ic_color"
+                android:drawableLeft="@drawable/ic_color"
+                android:drawablePadding="10dp"
+                android:hint="@string/car_color"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/primary_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#ADCCE2" />
+
+            <EditText
+                android:id="@+id/editTextCarYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:background="#1D009688"
+                android:drawableStart="@drawable/ic_time"
+                android:drawableLeft="@drawable/ic_time"
+                android:drawablePadding="10dp"
+                android:hint="@string/car_year"
+                android:padding="15dp"
+                android:inputType="date"
+                android:textColor="@color/white"
+                android:textColorHint="@color/primary_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#ADCCE2" />
+
+            <EditText
+                android:id="@+id/editTextCarModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:background="#1D009688"
+                android:drawableStart="@drawable/ic_directions_car_white_24dp"
+                android:drawableLeft="@drawable/ic_directions_car_white_24dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/car_model"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/primary_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#ADCCE2" />
+
+            <EditText
+                android:id="@+id/editTextPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:background="#1D009688"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="10dp"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/primary_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#ADCCE2" />
+
+            <EditText
+                android:id="@+id/editTextIdentificationCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:background="#1D009688"
+                android:drawableStart="@drawable/ic_id_card"
+                android:drawableLeft="@drawable/ic_id_card"
+                android:drawablePadding="10dp"
+                android:hint="@string/identification_number"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/primary_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#ADCCE2" />
+
+            <EditText
+                android:id="@+id/editTextRegistrationNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:background="#1D009688"
+                android:drawableStart="@drawable/ic_register_number"
+                android:drawableLeft="@drawable/ic_register_number"
+                android:drawablePadding="10dp"
+                android:hint="@string/taxi_registration_number"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/primary_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#ADCCE2" />
+
+            <TextView
+                android:id="@+id/textViewCategories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:background="#1D009688"
+                android:drawablePadding="10dp"
+                android:text="@string/select_category"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:drawableLeftCompat="@drawable/ic_more_vert_white_24dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#ADCCE2" />
+
+            <TextView
+                android:id="@+id/buttonRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/sign_in_button_back"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/button_sign_up"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

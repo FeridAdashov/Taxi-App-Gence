@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_sidebar_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/map_show_my_position_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin_default"
+        android:src="@drawable/ic_location_searching_white_24dp" />
+</LinearLayout>

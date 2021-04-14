@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/geoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="@string/search_engine"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <Spinner
+        android:id="@+id/geoSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewLoadingStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/geoLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#10000688"
+            android:drawableStart="@drawable/ic_edit_white_24dp"
+            android:drawableLeft="@drawable/ic_edit_white_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Məkanı daxil et"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColorHint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/geoOk"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#10000688"
+            android:minWidth="50dp"
+            android:src="@drawable/ic_search_white_24dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/checkbox_multi_match_only"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:onClick="onCheckboxClicked"
+        android:text="MultiMatchOnly [very slow]"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/checkbox_explicit_search_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:onClick="onCheckboxClicked"
+        android:text="ExplicitSearchText"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/lineA"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/checkbox_city_nodes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:onClick="onCheckboxClicked"
+        android:text="CityNodes"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/checkbox_street_nodes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:onClick="onCheckboxClicked"
+        android:text="StreetNodes [slow]"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/lineB"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:visibility="gone" />
+
+</LinearLayout>
+
+

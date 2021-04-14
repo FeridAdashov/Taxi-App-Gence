@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/map_sidebar_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:layout_alignParentRight="true">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/map_nav_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin_default"
+        android:src="@drawable/finish_way_white"
+        android:visibility="invisible"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/primary" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/map_nav_contact_with_passenger_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/map_nav_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin_default"
+                android:src="@drawable/ic_chat_white"
+                app:backgroundTint="@color/primary"
+                app:fabSize="mini" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/map_call_passenger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin_default"
+                android:src="@drawable/ic_phone"
+                app:backgroundTint="@color/primary"
+                app:fabSize="mini" />
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/map_nav_contact_with_passenger_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin_default"
+            android:src="@drawable/ic_chat_white"
+            android:visibility="invisible"
+            app:backgroundTint="@color/primary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/map_sidebar_menu_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/map_log_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin_default"
+                android:src="@drawable/ic_log_out"
+                app:backgroundTint="@color/primary"
+                app:fabSize="mini" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/map_show_my_position_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin_default"
+                android:src="@drawable/ic_location_searching_white_24dp"
+                app:backgroundTint="@color/primary"
+                app:fabSize="mini" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/callAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin_default"
+                android:src="@drawable/ic_phone"
+                app:backgroundTint="@color/primary"
+                app:fabSize="mini" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/map_nav_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin_default"
+                android:layout_marginTop="@dimen/fab_margin_default"
+                android:layout_marginRight="@dimen/fab_margin_default"
+                android:layout_marginBottom="@dimen/fab_margin_default"
+                android:src="@drawable/ic_navigation_white_24dp"
+                android:visibility="gone"
+                app:fabSize="mini" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/map_nav_cancel_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin_default"
+                android:layout_marginTop="@dimen/fab_margin_default"
+                android:layout_marginRight="@dimen/fab_margin_default"
+                android:layout_marginBottom="@dimen/fab_margin_default"
+                android:src="@drawable/ic_stop_white_24dp"
+                android:visibility="gone"
+                app:fabSize="mini" />
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/map_sidebar_control_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin_default"
+            android:src="@drawable/ic_keyboard_arrow_up_white_24dp"
+            app:backgroundTint="@color/primary" />
+    </LinearLayout>
+</LinearLayout>

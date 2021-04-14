@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/my_primary_transparent"
+        android:drawableEnd="@drawable/ic_search_white_24dp"
+        android:drawableRight="@drawable/ic_search_white_24dp"
+        android:drawablePadding="10dp"
+        android:hint="@string/search"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <include layout="@layout/have_not_item_textview"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewTaxis"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/editTextSearch"
+        android:layout_margin="8dp" />
+</RelativeLayout>

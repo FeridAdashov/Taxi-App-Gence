@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="my_primary">#009688</color>
+    <color name="my_primary_dark">#00796B</color>
+    <color name="my_primary_light">#B2DFDB</color>
+    <color name="my_accent">#FF5722</color>
+    <color name="my_primary_text">#212121</color>
+    <color name="my_secondary_text">#727272</color>
+    <color name="my_icons">#FFFFFF</color>
+    <color name="my_divider">#B6B6B6</color>
+
+    <color name="my_primary_transparent">#4D009688</color>
+    <color name="my_primary_dark_transparent">#9D00796B</color>
+    <color name="my_accent_transparent">#9DFF5722</color>
+    <color name="my_primary_light_transparent">#4DB2DFDB</color>
+
+    <color name="my_polyline_calculate">#9900796B</color>
+    <color name="my_polyline_track">#BF448AFF</color>
+
+
+    <color name="my_dark_transparent_bg">#2D000000</color>
+
+    <color name="primary">#009688</color>
+    <color name="primary_dark">#00796B</color>
+    <color name="primary_light">#B2DFDB</color>
+    <color name="accent">#FF5722</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="signupButtonColor">#066e8a</color>
+    <color name="actionBarTextColor">#000</color>
+
+    <color name="colorNavIcon">#dae9f6</color>
+    <color name="colorNavText">#01294b</color>
+
+    <color name="colorBackground">#1D557A</color>
+    <color name="download_icon_green_background">#3DDC84</color>
+    <color name="finish_way_white_background">#3DDC84</color>
+    <color name="taxi__notification_icon_background">#E8D509</color>
+
+    <color name="econom_taxi_color">#4726F1</color>
+    <color name="comfort_taxi_color">#FF3333</color>
+    <color name="curier_taxi_color">#33FF33</color>
+
+    <color name="nav_taxi_info_color_active">#ff99cc00</color>
+    <color name="nav_taxi_info_color_deactive">#ffff4444</color>
+</resources>

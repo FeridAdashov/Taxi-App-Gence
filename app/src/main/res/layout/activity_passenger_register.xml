@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context="texel.texel_pocketmaps.activities.RegisterActivities.PassengerRegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewCustomerProfileInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:text="@string/registration"
+                android:textColor="@color/white"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_edit_green_24dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/name"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:inputType="textPersonName"
+                android:digits=" abcdefghijklmnopqrstuvwxyzüığöşçəABCDEFGHIJKLMNOPQRSİTUVWXYZÜIĞÖŞÇƏ0123456789"/>
+
+            <EditText
+                android:id="@+id/editTextSurname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_edit_green_24dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/surname"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:inputType="textPersonName"
+                android:digits=" abcdefghijklmnopqrstuvwxyzüığöşçəABCDEFGHIJKLMNOPQRİSTUVWXYZÜIĞÖŞÇƏ0123456789"/>
+
+            <EditText
+                android:id="@+id/editTextPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_edit_green_24dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/phone_number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:inputType="phone"/>
+
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_sign_up"
+                android:textColor="@color/colorAccent"
+                android:shadowColor="@android:color/transparent"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapelogin"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

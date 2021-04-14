@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_in_back_img"
+    android:gravity="center"
+    tools:context="texel.texel_pocketmaps.activities.SignActivities.SignUp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/timg_my">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroupUsers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/radioAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/radioButtonAdmin"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioOrderer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/radioButtonOrderer"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioTaxi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/radioButtonDriver"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#1D009688"
+                android:drawableStart="@drawable/ic_person_white_24dp"
+                android:drawableLeft="@drawable/ic_person_white_24dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/hint_enter_email"
+                android:digits="abcdefghijklmnopqrstuvwxyz0123456789"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#ADCCE2" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25dp"
+                app:hintEnabled="false"
+                app:passwordToggleDrawable="@drawable/ic_eye_white_24dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/white">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#1D009688"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/hint_enter_password"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#ADCCE2" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25dp"
+                app:hintEnabled="false"
+                app:passwordToggleDrawable="@drawable/ic_eye_white_24dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/white">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editTextPasswordConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#1D009688"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/hint_reenter_password"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#ADCCE2" />
+
+            <TextView
+                android:id="@+id/buttonNextToInformationPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/sign_in_button_back"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/button_next"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

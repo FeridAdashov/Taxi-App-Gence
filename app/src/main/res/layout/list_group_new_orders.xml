@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/lblListName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblListDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Hələ hazır deyil"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/lblListMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Hələ hazır deyil"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/lblListTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/time_calculating"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_new_orders"
+        android:title="@string/new_orders"
+        android:icon="@drawable/ic_notifications_white" />
+
+    <item
+        android:id="@+id/navigation_searching_taxi"
+        android:title="@string/searching_taxi"
+        android:icon="@drawable/ic_searching" />
+
+    <item
+        android:id="@+id/navigation_on_way"
+        android:title="@string/orders_on_way"
+        android:icon="@drawable/ic_taxi_nav_bar"/>
+
+    <item
+        android:id="@+id/navigation_completed"
+        android:title="@string/completed_orders"
+        android:icon="@drawable/ic_2x_finish_flag" />
+
+    <item
+        android:id="@+id/navigation_more"
+        android:title="@string/menu"
+        android:icon="@drawable/ic_more_hamburger"
+        app:showAsAction="collapseActionView">
+    </item>
+</menu>

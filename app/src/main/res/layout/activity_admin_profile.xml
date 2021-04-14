@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="texel.texel_pocketmaps.activities.AdminProfileActivity"
+    android:id="@+id/parent"
+    android:background="@drawable/pages_background">
+
+    <FrameLayout
+        android:id="@+id/fragment_container_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/title_home"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="55dp"/>
+
+    <TextView
+        android:id="@+id/textViewPageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/parent"
+        android:gravity="center"/>
+
+    <View
+        android:id="@+id/viewForClick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menuConstraint1"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toBottomOf="@id/parent"
+        app:layout_constraintLeft_toLeftOf="@id/parent">
+
+        <menu.library.FilterMenuLayout
+            android:id="@+id/filter_menu1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:fm_centerHorizontal="true"
+            app:fm_centerVertical="true"
+            app:fm_collapsedRadius="24dp"
+            app:fm_drawable="@drawable/ic_fragments"
+            app:fm_expandedRadius="96dp"
+            app:fm_primaryColor="#239FF9"
+            app:fm_primaryDarkColor="#1276CC" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menuConstraint2"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toBottomOf="@id/parent"
+        app:layout_constraintRight_toRightOf="@id/parent">
+
+        <menu.library.FilterMenuLayout
+            android:id="@+id/filter_menu2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:fm_centerHorizontal="true"
+            app:fm_centerVertical="true"
+            app:fm_collapsedRadius="24dp"
+            app:fm_drawable="@drawable/ic_settings_white_24dp"
+            app:fm_expandedRadius="96dp"
+            app:fm_primaryColor="#239FF9"
+            app:fm_primaryDarkColor="#1276CC"  />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

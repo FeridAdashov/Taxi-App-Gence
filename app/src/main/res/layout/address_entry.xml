@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:padding="6dip">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/mapSecondLineTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/iconAddressDetail"
+                android:layout_toLeftOf="@id/iconAddressDetail"
+                android:textSize="9sp"/>
+
+            <TextView
+                android:id="@+id/mapFirstLineTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@id/iconAddressDetail"
+                android:layout_toLeftOf="@id/iconAddressDetail"
+                android:layout_below="@id/mapSecondLineTxt"
+                android:textSize="20sp"
+                android:textColor="@color/my_primary_dark"/>
+
+            <ImageView
+                android:id="@+id/iconAddressDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@color/my_primary_dark"
+                android:gravity="center"
+                android:src="@drawable/ic_settings_white_24dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#33333300" />
+</LinearLayout>

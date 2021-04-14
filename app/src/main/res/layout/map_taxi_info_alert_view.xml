@@ -1,0 +1,126 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shapelogin">
+
+        <TextView
+            android:id="@+id/textViewTaxiName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Farid Adashov"
+            android:textAllCaps="true"
+            android:textColor="@color/signupButtonColor"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iconTaxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/textViewTaxiName"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_taxi_green" />
+
+        <TextView
+            android:id="@+id/textViewCarNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconTaxi"
+            android:layout_centerHorizontal="true"
+            android:text="Nömrə : 34-bb-134"
+            android:textColor="@color/signupButtonColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewCarColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCarNumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Rəng : Göy"
+            android:textColor="@color/signupButtonColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewCarYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCarColor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="İl : 2002"
+            android:textColor="@color/signupButtonColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewCarModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCarYear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Model : Mersedes"
+            android:textColor="@color/signupButtonColor"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iconPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCarModel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_phone_number" />
+
+        <TextView
+            android:id="@+id/textViewTaxiPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconPhone"
+            android:layout_centerHorizontal="true"
+            android:text="0705373267"
+            android:textColor="@color/signupButtonColor"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/server_error_large_dividers"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/textViewCarModel"
+            android:background="@color/signupButtonColor" />
+
+        <View
+            android:id="@+id/serveer"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/textViewTaxiName"
+            android:background="@color/signupButtonColor" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shapelogin"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/imageViewCallTaxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_phone_green" />
+    </FrameLayout>
+</FrameLayout>

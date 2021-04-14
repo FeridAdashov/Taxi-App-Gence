@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shapelogin">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Ask Something?"
+            android:textColor="@color/primary_dark"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/neutral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-medium"
+            android:text="Neutral"
+            android:textColor="@color/signupButtonColor"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/negative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message"
+            android:layout_marginTop="20dp"
+            android:layout_toStartOf="@id/positive"
+            android:layout_toLeftOf="@id/positive"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-medium"
+            android:text="Negative"
+            android:textColor="@color/signupButtonColor"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/positive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:text="Positive"
+            android:textColor="@color/signupButtonColor"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shapelogin"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/imageViewCallTaxi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_ask" />
+    </FrameLayout>
+</FrameLayout>
